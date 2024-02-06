@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">                                                                                        
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html"  style="--navAni:1">Home</a></li>
+                <li><a href="About.html" style="--navAni:2">About</a></li>
+                <li><a href="skills.html" style="--navAni:3">Skills</a></li>
+                <li><a href="2.html" style="--navAni:4">Portfolio</a></li>
+                <li><a href="contact.html" class="active" style="--navAni:5">Contact</a></li>
+            </ul>
+    <button id="downloadButton"> <a href="Rohit_metha_Internship_Resume.pdf" download target="_blank" style="color: white; text-decoration: none;">Download Resume</a>.</button>
+           
+        </div>
+    </header>
+<div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
+            </div>
+            <div class="app-contact"><p>Email:<a href="mailto:rohitmetha111@gmail.com" style="color: white; text-decoration: none;"> rohitmetha111@gmail.com</a></p></div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="NAME">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="EMAIL">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="CONTACT NO">
+              </div>
+              <div class="app-form-group message">
+                <input id="messageInput" class="app-form-control" placeholder="MESSAGE">
+            </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button">CANCEL</button>
+                
+                <form action="/send_email_node" method="post">
+                  <textarea name="message" rows="4" cols="50" placeholder="Type your message here..." required></textarea>
+                  <br>
+                  <button type="submit" class="app-form-button">SEND</button>
+              </form>
+              
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="credits">
+        inspired by
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank" style="color: white; text-decoration: none;">
+          <svg class="dribbble" viewBox="0 0 200 200">
+            <g stroke="#ffffff" fill="none">
+              <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+              <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+              <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+              <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+            </g>
+          </svg>
+          Gururaj
+        </a>
+      </div> -->
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html> 
